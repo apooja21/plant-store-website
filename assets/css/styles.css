@@ -25,7 +25,7 @@
 	--title-color: hsl(107, 39%, 17%);
 	--text-color: hsl(158, 5%, 31%);
 	--text-color-light: hsl(156, 2%, 50%);
-	--body-color: hsl(64, 28%, 90%);
+	--body-color: hsl(64, 29%, 90%);
 	--container-color: #fff;
 
 	/*=================== Font and Typography ===================*/
@@ -230,10 +230,10 @@ body.dark-theme {
 }
 
 .nav__logo-icon {
-	height: 50px;
-	width: 50px;
+	width: 80px;
 	display: block;
 	font-size: 1.15rem;
+
 	mix-blend-mode: multiply;
 }
 
@@ -343,7 +343,7 @@ body.dark-theme {
 .home__social {
 	position: absolute;
 	top: 2rem;
-	right: -1rem;
+	right: -1.5rem;
 	display: grid;
 	row-gap: 3.5rem;
 	justify-items: center;
@@ -374,7 +374,7 @@ body.dark-theme {
 }
 
 .home__social-link {
-	font-size: 1rem;
+	font-size: 0.85rem;
 	color: var(--first-color);
 	transition: 0.4s;
 }
@@ -554,23 +554,15 @@ body.dark-theme {
 	background-color: var(--first-color-alt);
 }
 
-/* .product__circle {
-	width: 90px;
-	height: 90px;
+.product__circle {
+	width: 100px;
+	height: 100px;
 	background-color: var(--first-color-lighten);
 	border-radius: 50%;
 	position: absolute;
-	top: 18%;
-	left: 5%;
-}  */
-
-.product__circle {
-	width: 50px;
-	height: 50px;
-	position:
-	top: -15%;
-	left: 5%;
-} 
+	top: 1%;
+	left: 18%;
+}
 
 .product__card:hover .product__img {
 	transform: translateY(-0.5rem);
@@ -888,11 +880,10 @@ body.dark-theme {
 		width: 180px;
 	}
 	.home__title {
-		font-size: var(--h1-font-size);
+		font-size: var(--h2-font-size);
 	}
 	.home__img {
-		width: 250px;
-		justify-self: center;
+		width: 200px;
 	}
 	.steps__bg {
 		padding: 2rem 1rem;
@@ -905,40 +896,45 @@ body.dark-theme {
 		justify-content: center;
 	}
 	.product__circle {
-		width: 150px;
-		height: 150px;
+		width: 90px;
+		height: 90px;
 	}
-}
-
-@media screen and (max-width: 575px) and (min-width: 400px) {
-	.product__circle {
-		width: 120px;
-		height: 120px;
-		top: -5%;
-		left: 12%;
+	.home__social {
+		top: 3%;
+		right: -1rem;
+	}
+	.home__social-follow {
+		font-size: 10px;
+	}
+	.home__social-link {
+		font-size: 12px;
 	}
 }
 
 /*for medium devices*/
 @media screen and (min-width: 576px) {
+	.container {
+		margin-left: var(--mb-2);
+		margin-right: var(--mb-2);
+	}
 	.home__img {
-		width: 550px;
+		width: 350px;
 		justify-self: center;
 	}
-	.steps__container {
+	/* .steps__container {
 		grid-template-columns: repeat(2, 1fr);
-	}
+	} */
 	.product__description {
 		padding: 0 4rem;
 	}
 	.product__container {
-		grid-template-columns: repeat(2, 190px);
+		grid-template-columns: repeat(2, 170px);
 		justify-content: center;
 		column-gap: 5rem;
 	}
 	.product__circle {
-		width: 200px;
-		height: 200px;
+		width: 100px;
+		height: 100px;
 	}
 	.footer__subscribe {
 		width: 400px;
@@ -959,7 +955,7 @@ body.dark-theme {
 	}
 	.nav__list {
 		flex-direction: row;
-		column-gap: 3rem;
+		column-gap: 2rem;
 	}
 	.nav__menu {
 		margin-left: auto;
@@ -968,22 +964,56 @@ body.dark-theme {
 		font-size: var(--normal-font-size);
 		font-weight: var(--font-semi-bold);
 	}
-	.home__container {
+	.home__container,
+	.about__container,
+	.questions__group,
+	.contact__container,
+	.footer__container {
 		grid-template-columns: repeat(2, 1fr);
 	}
 	.home {
 		padding: 10rem 0 5rem;
 	}
-	.home__container {
+	.home__container,
+	.about__container {
 		align-items: center;
 	}
 	.home__img {
-		width: 440px;
+		width: 400px;
 		order: 1;
 	}
 	.home__social {
-		top: 10%;
+		top: 30%;
+	}
+	.home__social-follow {
+		font-size: var(--small-font-size);
+	}
+	.home__social-link {
+		font-size: var(--normal-font-size);
+	}
+	.about__img {
+		width: 450px;
+	}
+	.steps__container {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.questions__group {
+		align-items: flex-start;
+		column-gap: 1.5rem;
+	}
+	.footer__container {
+		column-gap: 3rem;
 	}
 }
 
-/*For */
+/*For large devices */
+
+/* background: hsla(165, 60%, 11%, 1);
+
+background: linear-gradient(90deg, hsla(165, 60%, 11%, 1) 0%, hsla(149, 54%, 31%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(165, 60%, 11%, 1) 0%, hsla(149, 54%, 31%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(165, 60%, 11%, 1) 0%, hsla(149, 54%, 31%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0b2c24", endColorstr="#247a4d", GradientType=1 ); */
