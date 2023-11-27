@@ -23,7 +23,7 @@ The website contains Home, Products, About, FAQs and Contact Sections.
 
 ## Demo
 
-[Insert gif or link to demo](https://apooja21.github.io/plant-store-website/)
+[Plant Store](https://apooja21.github.io/plant-store-website/)
 
 
 ## Run Locally
