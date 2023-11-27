@@ -19,12 +19,11 @@ The website contains Home, Products, About, FAQs and Contact Sections.
 - Light/dark mode toggle
 - Fullscreen mode
 - Responsive Design
-- Cross platform
 
 
 ## Demo
 
-Insert gif or link to demo
+[Insert gif or link to demo](https://apooja21.github.io/plant-store-website/)
 
 
 ## Run Locally
@@ -35,7 +34,7 @@ Clone the project
   git clone https://link-to-project
 ```
 
-Go to the project directory and run ``` home.html ```
+Go to the project directory and run ``` index.html ```
 
 
 
